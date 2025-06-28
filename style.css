@@ -1,0 +1,364 @@
+
+        body{
+    background-image: url(/IMG/BACKGROUND.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.JUDUL{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  color: #749BC2;
+  font-family: fantasy;
+  font-size: 50px;
+  text-shadow: #131D4F 4px 4px;
+  animation: bounce 1.5s infinite;
+  animation-delay: 0.2s;
+}
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+}
+
+.logo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  top: -200px;
+  left: 230px;
+}
+
+
+
+.NUAIMAN{
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+  color: #254D70;
+  position: relative;
+  left: 44%;
+  text-shadow: #131D4F 4px 4px;
+  animation: bounce 1.5s infinite;
+  width: 10px;
+}
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-20px);
+  }
+}
+
+.img2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 250px
+}
+
+
+.logo2{
+  width: 160px;
+  height: 170px;
+  border-radius: 22%;
+  position: relative;
+  top: -200px;
+  left: 70%;
+}
+
+.animasi{
+  color: #749BC2;
+  font-size: 40px;
+  position: relative;
+  left: 20%;
+  text-shadow: #0B1D51 4px 5px;
+  top: -96vw;
+  width: 50vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.funfact{
+  text-align: center;
+  color: red;
+  font-size: 5vw;
+  text-shadow: #FCEF91 4px 6px;
+  top: -1200px;
+  position: relative;
+}
+
+
+.funfact1 p {
+  color: #254D70;
+  font-family: monospace;
+  font-size: 25px;
+  text-shadow: #131D4F 2px 2px;
+  animation-delay: 0.3s;
+  animation: bounce 1.5s infinite;
+  text-align: center;
+  top: -45vw;
+  position: relative;
+}
+
+span{
+  position: relative;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  animation: bounce 1s ease infinite alternate;
+}
+
+.funfact span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.funfact span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.funfact span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.funfact span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.funfact span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.funfact span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.funfact span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.box{
+  position: relative;
+  width: 900px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0);
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 200px;
+  margin-left: 25%;
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  width: 780px;
+  height: 140%;
+  background-color: #4793AF;
+  box-shadow: 20px 15px 20px #F6F7C4;
+  animation: animate 4s linear infinite;
+}
+.box::after{
+  content: '';
+  position: absolute;
+  inset: 10px;
+  background-image: url(/IMG/Foto\ air\ sejornie.png);
+  border-radius: 16px;
+  background-repeat: no-repeat;
+background-size: 900px 840px;
+
+}
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.creator{
+  font-size: 40px;
+  bottom: 750px;
+  position: relative;
+  left: 300px;
+  width: 17vw;
+}
+.by{
+  color: #DD5746;
+  text-shadow: #254D70 4px 4px;
+}
+.irwan{
+  color:#2C4E80;
+  text-shadow: #0B1D51 4px 4px;
+}
+
+.foto-3{
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 110vw;
+  width: 50vw;
+  height: 30vw;
+  object-fit: cover;
+  right: 90px;
+  rotate: 30deg;
+}
+
+.penutup{
+  font-family: fantasy;
+  color: #749BC2;
+  text-shadow: black 4px 4px;
+  bottom: -100vw;
+  position: absolute;
+  left: 20vw;
+  animation: bounces 1.5 infinite;
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+  .logo{
+    left: 0;
+  }
+  .logo2{
+    margin: 0;
+    left: 120%;
+  }
+  .JUDUL{
+    left: 40%;
+    position: relative;
+  }
+  .NUAIMAN{
+    position: relative;
+    left: 70%;
+  }
+  .box{
+    size: 50%;
+    position: absolute;
+    left: -17%;
+    top: 11cm;
+  }
+  .animasi{
+    position: absolute;
+    top: 9cm;
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+  left: 40%;
+  }
+  .funfact{
+    font-size: 10vw;
+    position: relative;
+    top: 21cm;
+    left: 40%;
+    width: 100%;
+  }
+  .funfact1{
+    position: relative;
+    top: 37cm;
+    left: 40%;
+    width: 100%;
+      }
+  .img2{
+    position: absolute;
+    left: 10%;
+    top: 41cm;
+  }
+  .creator{
+    position: absolute;
+    top: 58cm;
+    width: 115%;
+    left: 34%;
+  }
+  .foto-3{
+    position: relative;
+    top: 50cm;
+    width: 120vw;
+    height: 90vw;
+    left: 26%;
+  }
+  .penutup{
+    text-align: center;
+    position: relative;
+    bottom: -55cm;
+    left: 36%;
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .logo{
+    left: 0;
+  }
+  .logo2{
+    margin: 0;
+    left: 124%;
+  }
+  .JUDUL{
+    left: 30%;
+    position: relative;
+  }
+  .NUAIMAN{
+    position: relative;
+    left: 64%;
+  }
+  .box{
+    size: 50%;
+    position: absolute;
+    left: -17%;
+    top: 14cm;
+  }
+  .animasi{
+    position: absolute;
+    top: 9cm;
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+  left: 40%;
+  }
+  .funfact{
+    font-size: 10vw;
+    position: relative;
+    top: 25cm;
+    left: 40%;
+    width: 100%;
+  }
+  .funfact1{
+    position: relative;
+    top: 43cm;
+    left: 40%;
+    width: 100%;
+      }
+  .img2{
+    position: absolute;
+    left: 10%;
+    top: 45cm;
+  }
+  .creator{
+    position: absolute;
+    top: 62cm;
+    width: 115%;
+    left: 44%;
+  }
+  .foto-3{
+    position: relative;
+    top: 52cm;
+    width: 120vw;
+    height: 90vw;
+    left: 26%;
+  }
+  .penutup{
+    text-align: center;
+    position: relative;
+    bottom: -55cm;
+    left: 36%;
+    width: 100%;
+    padding: 50px;
+  }
+}
